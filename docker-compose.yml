@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  subject-api:
+    image: subject-api
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8080:9090
+
+  nginx:
+    image: docker.io/nginx:1.21.1-alpine
+    ports:
+      - 9090:80
