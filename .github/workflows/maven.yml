@@ -40,7 +40,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v3
       with:
-        images: ghcr.io/bazsup/subject-api
+        images: ghcr.io/boy52hz/subject-api
         tags: |
           type=sha
         flavor: |
